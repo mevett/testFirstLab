@@ -1,4 +1,5 @@
-package introToJUnitLab;
+//this should be in a package
+//package ????;
 
 import java.util.Scanner;
 
