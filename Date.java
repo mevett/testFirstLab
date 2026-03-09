@@ -36,7 +36,7 @@ public class Date implements Cloneable
         if (aDate == null)//Not a real date.
         {
              System.out.println("Fatal Error in Date(Date).");
-             System.exit(0);
+             //mpe System.exit(0);
         }
 
         month = aDate.month;
@@ -67,7 +67,7 @@ public class Date implements Cloneable
         else
         {
             System.out.println("Fatal Error in setDate(int, int, int)");
-            System.exit(0);
+            //mpe System.exit(0);
         }
     }
 
@@ -82,7 +82,7 @@ public class Date implements Cloneable
         else
         {
             System.out.println("Fatal Error in setDate(String,int, int)");
-            System.exit(0);
+            //mpe System.exit(0);
         }
     }
 
@@ -96,7 +96,7 @@ public class Date implements Cloneable
         if ( (year < 1000) || (year > 9999) )
         {
             System.out.println("Fatal Error in setYear(int)");
-            System.exit(0);
+            //mpe System.exit(0);
         }
         else
             this.year = year;
@@ -106,7 +106,7 @@ public class Date implements Cloneable
         if ((monthNumber <= 0) || (monthNumber > 12))
         {
             System.out.println("Fatal Error in setMonth(int)");
-            System.exit(0);
+            //mpe System.exit(0);
         }
         else
             month = monthString(monthNumber);
@@ -117,7 +117,7 @@ public class Date implements Cloneable
         if ((day <= 0) || (day > 31))
         {
             System.out.println("Fatal Error in setDay(int)");
-            System.exit(0);
+            //mpe System.exit(0);
         }
         else
             this.day = day;
@@ -152,7 +152,7 @@ public class Date implements Cloneable
         else
         {
             System.out.println("Fatal Error in getMonth");
-            System.exit(0);
+            //mpe System.exit(0);
             return 0; //Needed to keep the compiler happy
         }
     }
@@ -262,7 +262,7 @@ public class Date implements Cloneable
             return "December";
         default:
             System.out.println("Fatal Error in monthString");
-            System.exit(0);
+            //mpe System.exit(0);
             return "Error"; //to keep the compiler happy
         }
     }
